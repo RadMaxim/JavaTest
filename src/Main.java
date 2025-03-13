@@ -15,10 +15,12 @@ public class Main implements CheckData,CheckEmail {
 
     public String checkEmail(String data) {
         if (!data.endsWith("mail.ru"))return "Error";
+        return data;
     }
+    @Override
     public String checkDataPassword(String data) {
         if (data.length()>10)return "Error";
 
-        return "";
+        return data;
     }
 }
